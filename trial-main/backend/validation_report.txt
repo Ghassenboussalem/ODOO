@@ -1,0 +1,134 @@
+COMPLIANCE VALIDATION REPORT
+================================================================================
+
+Generated using TokenFactory API (Llama-3.1-70B-Instruct)
+Document: C:\Users\user\OneDrive\Bureau\odo\trial-main\backend\uploads\c3d5cc3a-6069-4853-8648-6ff595afb756\extracted_document.json
+Rules: structure_rules.json
+Metadata: C:\Users\user\OneDrive\Bureau\odo\trial-main\backend\uploads\c3d5cc3a-6069-4853-8648-6ff595afb756\metadata.json
+================================================================================
+
+**VALIDATION RESULTS**
+
+### STRUCT_001: Fund Name
+- **Rule ID**: STRUCT_001
+- **Section**: Cover Page
+- **Applicability**: Yes
+- **JSON Path Checked**: document_metadata.fund_name
+- **Value Found**: ODDO BHF US Equity Active UCITS ETF
+- **Validation Result**: COMPLIANT ✅
+- **Explanation**: The fund name is present in the document metadata.
+
+### STRUCT_002: Date
+- **Rule ID**: STRUCT_002
+- **Section**: Cover Page
+- **Applicability**: Yes
+- **JSON Path Checked**: page_de_garde.content[0].text
+- **Value Found**: October 2025
+- **Validation Result**: COMPLIANT ✅
+- **Explanation**: The date is present on the cover page in the format "Month YYYY".
+
+### STRUCT_003: Promotional Document Mention
+- **Rule ID**: STRUCT_003
+- **Section**: Cover Page
+- **Applicability**: Yes
+- **JSON Path Checked**: page_de_garde.content
+- **Value Found**: Not found
+- **Validation Result**: VIOLATION ❌
+- **Explanation**: The mention "promotional document" is missing from the cover page.
+
+### STRUCT_004: Target Audience
+- **Rule ID**: STRUCT_004
+- **Section**: Cover Page
+- **Applicability**: Yes
+- **JSON Path Checked**: document_metadata.client_type
+- **Value Found**: retail
+- **Validation Result**: COMPLIANT ✅
+- **Explanation**: The target audience is specified as "retail" in the document metadata.
+
+### STRUCT_005: Pre-Commercialisation Warning
+- **Rule ID**: STRUCT_005
+- **Section**: Cover Page
+- **Applicability**: Yes
+- **JSON Path Checked**: page_de_garde.content
+- **Value Found**: Not found
+- **Validation Result**: VIOLATION ❌
+- **Explanation**: The pre-commercialisation warning is missing from the cover page.
+
+### STRUCT_006: "Do not disclose" Mention
+- **Rule ID**: STRUCT_006
+- **Section**: Cover Page
+- **Applicability**: No
+- **JSON Path Checked**: N/A
+- **Value Found**: N/A
+- **Validation Result**: N/A
+- **Explanation**: This rule does not apply to retail clients.
+
+### STRUCT_007: Client Name
+- **Rule ID**: STRUCT_007
+- **Section**: Cover Page
+- **Applicability**: No
+- **JSON Path Checked**: N/A
+- **Value Found**: N/A
+- **Validation Result**: N/A
+- **Explanation**: This rule does not apply to non-client-specific documents.
+
+### STRUCT_008: Standard Disclaimer on Slide 2
+- **Rule ID**: STRUCT_008
+- **Section**: Slide 2
+- **Applicability**: Yes
+- **JSON Path Checked**: slide_2.content
+- **Value Found**: Not found
+- **Validation Result**: VIOLATION ❌
+- **Explanation**: The standard disclaimer is missing from Slide 2.
+
+### STRUCT_009: Complete Risk Profile on Slide 2
+- **Rule ID**: STRUCT_009
+- **Section**: Slide 2
+- **Applicability**: Yes
+- **JSON Path Checked**: slide_2.content
+- **Value Found**: Not found
+- **Validation Result**: VIOLATION ❌
+- **Explanation**: The complete risk profile is missing from Slide 2.
+
+### STRUCT_010: Commercialisation Countries on Slide 2
+- **Rule ID**: STRUCT_010
+- **Section**: Slide 2
+- **Applicability**: Yes
+- **JSON Path Checked**: slide_2.content
+- **Value Found**: Not found
+- **Validation Result**: VIOLATION ❌
+- **Explanation**: The list of commercialisation countries is missing from Slide 2.
+
+### STRUCT_011: SGP Legal Mention on Back Page
+- **Rule ID**: STRUCT_011
+- **Section**: Back Page
+- **Applicability**: Yes
+- **JSON Path Checked**: page_de_fin.content
+- **Value Found**: Found
+- **Validation Result**: COMPLIANT ✅
+- **Explanation**: The SGP legal mention is present on the back page.
+
+**SUMMARY**
+
+- **CRITICAL VIOLATIONS** (severity: critical): 5
+  - STRUCT_003: Promotional Document Mention
+  - STRUCT_005: Pre-Commercialisation Warning
+  - STRUCT_008: Standard Disclaimer on Slide 2
+  - STRUCT_009: Complete Risk Profile on Slide 2
+  - STRUCT_010: Commercialisation Countries on Slide 2
+- **MAJOR ISSUES** (severity: major): 0
+- **MINOR ISSUES** (severity: minor): 0
+- **COMPLIANT ELEMENTS**: 3
+  - STRUCT_001: Fund Name
+  - STRUCT_002: Date
+  - STRUCT_004: Target Audience
+  - STRUCT_011: SGP Legal Mention on Back Page
+- **Total Violations Count**: 5
+
+**DETAILED REMEDIATION STEPS**
+
+1. Add the mention "promotional document" to the cover page.
+2. Add the pre-commercialisation warning to the cover page.
+3. Add the standard disclaimer to Slide 2.
+4. Add the complete risk profile to Slide 2.
+5. Add the list of commercialisation countries to Slide 2.
